@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="img">
+    <file>frango_assado.png</file>
+    <file>frango_frito.png</file>
+    <file>maionese.png</file>
+    <file>peixe_frito.png</file>
+  </qresource>
+</RCC>

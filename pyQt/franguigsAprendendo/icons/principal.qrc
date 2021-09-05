@@ -1,0 +1,26 @@
+<RCC>
+  <qresource prefix="img">
+    <file>001-do-utilizador.png</file>
+    <file>002-do-utilizador-1.png</file>
+    <file>003-adicionar-usuario.png</file>
+    <file>004-remover-usuario.png</file>
+    <file>005-comercial.png</file>
+    <file>006-cadeado.png</file>
+    <file>007-pasta.png</file>
+    <file>008-arquivo.png</file>
+    <file>009-adicionar.png</file>
+    <file>010-visao.png</file>
+    <file>011-costas.png</file>
+    <file>012-talheres.png</file>
+    <file>013-recarregar.png</file>
+    <file>014-cardapio.png</file>
+    <file>015-lixo.png</file>
+    <file>016-replay.png</file>
+    <file>017-roda-dentada.png</file>
+    <file>018-pasta-1.png</file>
+    <file>019-gostar.png</file>
+    <file>020-cadeado-1.png</file>
+    <file>franguigs_titulo.png</file>
+    <file>014-cardapio.png</file>
+  </qresource>
+</RCC>

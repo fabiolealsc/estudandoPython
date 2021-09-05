@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="testTT">
+    <file>imagens/franguigs_titulo.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,356 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,600,900);
+
+:root{
+    background-color: #1D2241;
+    height: -webkit-fill-available;
+    font-size: 62.5%;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+body {
+    background-color: #1D2241;
+    background: -webkit-linear-gradient(right, #1D2241, #30386b);
+    background: -moz-linear-gradient(right, #1D2241, #30386b);
+    background: -o-linear-gradient(right, #1D2241, #30386b);
+    background: linear-gradient(to left, #1D2241, #30386b);
+    background-image: url("../img/img-bg.jpg");
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;    
+}
+
+h1, h2, h3, h4{
+    margin-bottom: 1rem;
+    color: #1D2241;
+}
+
+h1{
+    font-size: 5.4rem;
+    margin-bottom: 5rem;
+}
+
+h2{
+    font-size: 4.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+/* Util - Base */
+
+.container{
+    background: #FFF;
+    width: 100%;
+    height: auto;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 2px;
+}
+
+.container > *{
+    width: 100%;
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center{
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/*Página - Game*/
+.game-page {
+    padding: 2% 4%;
+}
+.subtitle-page-game {
+    color: #1D2241;
+    font-size: 70px;
+    font-weight:  900;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.choice-container{
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgb(86, 165, 235, 0.25);
+    background-color: #FFF;
+    border-radius: 0 4px 4px 0
+}
+
+.choice-container:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem;
+    transform: translate(-0.1rem);
+    transition: transform 150ms;
+}
+
+.choice-prefix{
+    padding: 1.5rem 2.5rem;
+    background-color: #1D2241;
+    color: #FFF;
+    border-radius: 4px 0 0 4px;
+}
+
+.choice-text{
+    padding: 1.5rem;
+    width: 100%;
+}
+
+.correct{
+    color: #FFF;
+    background-color: #28a745;    
+}
+
+.incorrect{
+    color: #FFF;
+    background-color: #dc3545;
+}
+
+#hud{
+    display: flex;
+    justify-content: space-around;
+}
+
+.hud-prefix{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text{
+    text-align: center;
+}
+
+/*Buttons*/
+
+.btn{
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #56a5eb;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #56a5eb;
+    background-color: white;
+}
+
+.btn:hover{
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translate(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+/* Forms */
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+input {
+    margin-bottom: 1rem;
+    width: 20rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    /*box-shadow: 0 0.1rem 1.4rem 0 rgba(86, 185, 235, 05);*/
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+/*Página - Login*/
+.login-page {
+  padding: 4% 0 0;
+  margin: auto;
+}
+.login-page img {
+  width: 100%;
+}
+.subtitle-quiz, .subtitle-page {
+  color: #fff;
+  font-size: 70px;
+  font-weight:  900;
+  text-align: center;
+}
+.subtitle-page {
+    margin: -30px 0 10px 0;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 600px;
+  margin: 0 auto 100px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 2px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  letter-spacing: .2rem;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.form input:focus {
+  border: 1px solid #30386b;
+}
+
+.form button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  outline: 0;
+  background: #30386b;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #1D2241;
+}
+
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/*Página - Resultado do Jogo*/
+.game-result h2{
+  text-align: center;
+}
+.status-player{
+  border: 1px solid #1D2241;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  font-size: 50px;
+  background: #1D2241;
+  color: #FFF;
+  line-height: 200px;
+  margin: 0 auto;
+}
+
+/* Loader */
+#loader{
+    border:1.6rem solid #FFF;
+    border-radius: 50%;
+    border-top: 1.6rem solid #1D2241;
+    width: 12rem;
+    height: 12rem;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to content */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:0px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-0px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+/*Responsivo*/
+@media (max-width: 400px) {
+
+  .login-page {
+    width: 320px;
+  }
+
+  .form {
+    max-width: 320px;
+  }
+
+  body {
+    height: auto;
+  }
+
+}
