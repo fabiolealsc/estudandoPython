@@ -15,18 +15,24 @@ app = QtWidgets.QApplication([])
 def chama_tela_estoque():
     tela_estoque.show()
     tela_pedido.close()
+
 def chama_tela_pedido():
     tela_pedido.show()
     tela_estoque.close()
+
 def chama_tela_franguigs():
     tela_pedido.close()
     tela_estoque.close()
     tela_login.close()
     tela_franguigs.show()
+    Settings.carregaDados(tela_franguigs)
+
 def chama_tela_opcoes():
     tela_opcoes.show()
+
 def conclui_carrinho():
     tela_opcoes.close()
+
 def verificar():
     usuario = tela_login.leUsuario.text()
     senha = tela_login.leSenha.text()
@@ -45,8 +51,8 @@ def salvar_pedido():
     try:
         banco = sqlite3.connect('banco_pedidos.db')
         cursor = banco.cursor()
-        cursor.execute('CREATE TABLE IF NOT EXISTS pedidos (cliente text, wats text, prazo text)')
-        cursor.execute("INSERT INTO pedidos VALUES ('"+cliente+"', '"+wats+"','"+prazo+"')")
+        cursor.execute('CREATE TABLE IF NOT EXISTS pedidos (id integer primary key autoincrement null, cliente text, wats text, prazo text)')
+        cursor.execute("INSERT INTO pedidos VALUES (null,'"+cliente+"', '"+wats+"','"+prazo+"')")
         banco.commit()
         banco.close()
         print('Dados cadastrados!')
@@ -56,7 +62,8 @@ def salvar_pedido():
     
     except sqlite3.Error as erro:
         print('Erro ao inserir',erro)
-    
+
+
 # Carregando os arquivos UI
 tela_franguigs = uic.loadUi('guis/principal.ui')
 tela_estoque = uic.loadUi('guis/estoque.ui')

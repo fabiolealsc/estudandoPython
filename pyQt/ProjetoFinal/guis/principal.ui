@@ -26,6 +26,21 @@
     <property name="styleSheet">
      <string notr="true">background-color: rgb(170, 170, 255);</string>
     </property>
+    <property name="rowCount">
+     <number>12</number>
+    </property>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
     <column>
      <property name="text">
       <string>Id</string>
