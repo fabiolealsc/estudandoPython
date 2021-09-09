@@ -44,7 +44,7 @@ def verificar():
         tela_login.titulo.setPixmap(QtGui.QPixmap('ProjetoFinal/icons/mascote.png'))
 
 def salvar_pedido():
-    n_pedido = tela_estoque.lineEdit_4.text()
+    n_pedido = tela_pedido.lineEdit_4.text()
     cliente = tela_pedido.lineEdit.text()
     wats = tela_pedido.lineEdit_2.text()
     prazo = tela_pedido.lineEdit_3.text()
