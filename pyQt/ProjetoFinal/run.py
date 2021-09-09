@@ -44,6 +44,7 @@ def verificar():
         tela_login.titulo.setPixmap(QtGui.QPixmap('ProjetoFinal/icons/mascote.png'))
 
 def salvar_pedido():
+    n_pedido = tela_estoque.lineEdit_4.text()
     cliente = tela_pedido.lineEdit.text()
     wats = tela_pedido.lineEdit_2.text()
     prazo = tela_pedido.lineEdit_3.text()
@@ -51,14 +52,15 @@ def salvar_pedido():
     try:
         banco = sqlite3.connect('banco_pedidos.db')
         cursor = banco.cursor()
-        cursor.execute('CREATE TABLE IF NOT EXISTS pedidos (id integer primary key autoincrement null, cliente text, wats text, prazo text)')
-        cursor.execute("INSERT INTO pedidos VALUES (null,'"+cliente+"', '"+wats+"','"+prazo+"')")
+        cursor.execute('CREATE TABLE IF NOT EXISTS pedidos (npedido text, cliente text, wats text, prazo text)')
+        cursor.execute("INSERT INTO pedidos VALUES ('"+n_pedido+"','"+cliente+"', '"+wats+"','"+prazo+"')")
         banco.commit()
         banco.close()
         print('Dados cadastrados!')
         tela_pedido.lineEdit.setText('')
         tela_pedido.lineEdit_2.setText('')
         tela_pedido.lineEdit_3.setText('')
+        tela_pedido.lineEdit_4.setText('')
     
     except sqlite3.Error as erro:
         print('Erro ao inserir',erro)
