@@ -1,5 +1,5 @@
 <RCC>
-  <qresource prefix="imgs">
+  <qresource prefix="icons">
     <file>001-do-utilizador.png</file>
     <file>002-do-utilizador-1.png</file>
     <file>003-adicionar-usuario.png</file>

@@ -41,7 +41,7 @@
     </property>
     <property name="styleSheet">
      <string notr="true">QLabel{	
-	image: url(:/imgs/frango_assado.png);
+	image: url(:/icons/frango_assado.png);
 	border-radius: 15px;
 }</string>
     </property>
@@ -59,7 +59,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/frango_frito.png);</string>
+     <string notr="true">image: url(:/icons/frango_frito.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -75,7 +75,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/maionese.png);</string>
+     <string notr="true">image: url(:/icons/maionese.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -91,7 +91,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/peixe_frito.png);</string>
+     <string notr="true">image: url(:/icons/peixe_frito.png);</string>
     </property>
     <property name="text">
      <string/>

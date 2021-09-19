@@ -49,7 +49,7 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/006-cadeado.png);</string>
+     <string notr="true">image: url(:/icons/006-cadeado.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -65,8 +65,8 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/001-do-utilizador.png);
-image: url(:/imgs/001-do-utilizador.png);</string>
+     <string notr="true">image: url(:/icons/001-do-utilizador.png);
+image: url(:/icons/001-do-utilizador.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -241,7 +241,7 @@ QPushButton:pressed{
 	background-color: rgb(103, 103, 103);
 	border-radius: 5px;
 	border: 2px solid rgb(93, 93, 93);
-	image: url(:/imgs/001-do-utilizador.png);
+	image: url(:/icons/001-do-utilizador.png);
 }
 QPushButton:hover{
 	background-color: rgb(123, 123, 123);

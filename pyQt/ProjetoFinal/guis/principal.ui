@@ -167,13 +167,13 @@
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/franguigs_titulo.png);</string>
+     <string notr="true">image: url(:/icons/franguigs_titulo.png);</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../icons/principal.qrc">:/imgs/franguigs_titulo.png</pixmap>
+     <pixmap resource="../icons/principal.qrc">:/icons/franguigs_titulo.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
@@ -265,7 +265,7 @@ QPushButton:pressed{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/014-cardapio.png);</string>
+     <string notr="true">image: url(:/icons/014-cardapio.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -281,7 +281,7 @@ QPushButton:pressed{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/009-adicionar.png);</string>
+     <string notr="true">image: url(:/icons/009-adicionar.png);</string>
     </property>
     <property name="text">
      <string/>
@@ -297,13 +297,13 @@ QPushButton:pressed{
      </rect>
     </property>
     <property name="styleSheet">
-     <string notr="true">image: url(:/imgs/001-do-utilizador.png);</string>
+     <string notr="true">image: url(:/icons/001-do-utilizador.png);</string>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap resource="../icons/principal.qrc">:/imgs/001-do-utilizador.png</pixmap>
+     <pixmap resource="../icons/principal.qrc">:/icons/001-do-utilizador.png</pixmap>
     </property>
     <property name="scaledContents">
      <bool>true</bool>
